@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Strength Background</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.11/tailwind.min.css"
+    integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w=="
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background" id="background"></div>
+
+  <div class="min-h-screen flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg p-10 w-full max-w-md z-10">
+      <h1 class="text-3xl font-bold text-center mb-2">Secure Login</h1>
+      <p class="text-gray-600 text-center mb-6">Type a strong password to clear the blur!</p>
+      
+      <form id="loginForm">
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-medium">Email</label>
+          <input
+            type="text"
+            id="email"
+            class="w-full p-2 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="block text-gray-700 font-medium">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="w-full p-2 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            placeholder="Enter your password"
+          />
+          <small class="text-gray-500">Password strength affects background blur.</small>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-300"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
